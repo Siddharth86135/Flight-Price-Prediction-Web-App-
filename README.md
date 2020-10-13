@@ -4,8 +4,8 @@
   * [Demo](#demo)
   * [Overview](#overview)
   * [Installation](#installation)
-  * [Machine Learning Model Used](#Machine Learning Model Used)
-  * [Hyperparameter Tuning](#Hyperparameter Tuning)
+  * [Machine Learning Model Used](#machine-learning-model-used)
+  * [Hyperparameter Tuning](#hyperparameter-tuning)
   * [Deployement on Heroku](#deployement-on-heroku)
   * [Directory Tree](#directory-tree)
  
