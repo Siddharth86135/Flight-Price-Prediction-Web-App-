@@ -4,6 +4,8 @@
   * [Demo](#demo)
   * [Overview](#overview)
   * [Installation](#installation)
+  * [Machine Learning Model Used](#Machine Learning Model Used)
+  * [Hyperparameter Tuning](#Hyperparameter Tuning)
   * [Deployement on Heroku](#deployement-on-heroku)
   * [Directory Tree](#directory-tree)
  
@@ -22,6 +24,26 @@ The Code is written in Python 3.6.10. If you don't have Python installed you can
 ```bash
 pip install -r requirements.txt
 ```
+## Machine Learning Model Used
+
+I used Random forest Machine Learning model in this project.
+
+Random forest, like its name implies, consists of a large number of individual decision trees that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction
+
+The fundamental concept behind random forest is a simple but powerful one — the wisdom of crowds. In data science speak, the reason that the random forest model works so well is:
+A large number of relatively uncorrelated models (trees) operating as a committee will outperform any of the individual constituent models.
+
+
+The low correlation between models is the key. Just like how investments with low correlations (like stocks and bonds) come together to form a portfolio that is greater than the sum of its parts, uncorrelated models can produce ensemble predictions that are more accurate than any of the individual predictions. The reason for this wonderful effect is that the trees protect each other from their individual errors (as long as they don’t constantly all err in the same direction).
+
+## Hyperparameter Tuning
+
+In this project I also used Hyperparameter tuning to fine tune the Random forest Regressor.
+
+In machine learning, hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are learned.
+
+The same kind of machine learning model can require different constraints, weights or learning rates to generalize different data patterns. These measures are called hyperparameters, and have to be tuned so that the model can optimally solve the machine learning problem. Hyperparameter optimization finds a tuple of hyperparameters that yields an optimal model which minimizes a predefined loss function on given independent data. The objective function takes a tuple of hyperparameters and returns the associated loss. Cross-validation is often used to estimate this generalization performance.
+
 
 ## Deployement on Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
